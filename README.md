@@ -60,3 +60,5 @@ The native Home Assistant combination helper only supports summing up values. Th
 2. Click **Create Helper** in the bottom right.
 3. Scroll to the bottom and select **Create via integration**.
 4. Search for **Erweiterter Kombinationssensor (+-)**.
+
+[![Zu Home Assistant hinzufügen](https://home-assistant.io)](https://home-assistant.io)
