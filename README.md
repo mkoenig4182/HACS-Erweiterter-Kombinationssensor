@@ -61,4 +61,4 @@ The native Home Assistant combination helper only supports summing up values. Th
 3. Scroll to the bottom and select **Create via integration**.
 4. Search for **Erweiterter Kombinationssensor (+-)**.
 
-[![Zu Home Assistant hinzufügen](https://home-assistant.io)](https://home-assistant.io)
+<p><a href="[https://my.home-assistant.io/redirect/hacs_repository/?owner=thomluther&amp;repository=ha-anker-solix&amp;category=integration](https://my.home-assistant.io/redirect/hacs_repository/?owner=mkoenig4182&repository=HACS-Erweiterter-Kombinationssensor&category=integration)" rel="nofollow"><img src="https://camo.githubusercontent.com/49f849a6409cdcad49e32d41115ab078f810d960b35466436e028d4552aadd40/68747470733a2f2f6d792e686f6d652d617373697374616e742e696f2f6261646765732f686163735f7265706f7369746f72792e737667" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." data-canonical-src="https://my.home-assistant.io/badges/hacs_repository.svg" style="max-width: 100%;"></a></p>
