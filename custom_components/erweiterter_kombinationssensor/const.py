@@ -1,0 +1,1 @@
+DOMAIN = "erweiterter_kombinationssensor"

@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Erweiterter Kombinationssensor (+-)",
+        "description": "Erstellt einen Sensor, der Werte addiert, subtrahiert und fehlerhafte Werte ausschließt.",
+        "data": {
+          "name": "Name des Helfers",
+          "sensors_plus": "Sensoren (Plus-Rechnung)",
+          "sensors_minus": "Sensoren (Minus-Rechnung)",
+          "min_value": "Minimalwert (Ausschluss-Grenze)",
+          "max_value": "Maximalwert (Ausschluss-Grenze)"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kombinationssensor bearbeiten",
+        "data": {
+          "sensors_plus": "Sensoren (Plus-Rechnung)",
+          "sensors_minus": "Sensoren (Minus-Rechnung)",
+          "min_value": "Minimalwert (Ausschluss-Grenze)",
+          "max_value": "Maximalwert (Ausschluss-Grenze)"
+        }
+      }
+    }
+  }
+}
