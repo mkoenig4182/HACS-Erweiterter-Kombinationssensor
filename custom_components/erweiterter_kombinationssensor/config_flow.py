@@ -9,6 +9,7 @@ def get_data_schema(defaults=None):
     if defaults is None:
         defaults = {}
 
+    # Striktes Auslesen und Absichern der Plus-Sensoren
     raw_plus = defaults.get("sensors_plus", [])
     if isinstance(raw_plus, list):
         current_plus = raw_plus
@@ -17,6 +18,7 @@ def get_data_schema(defaults=None):
     else:
         current_plus = list(raw_plus) if raw_plus else []
 
+    # Striktes Auslesen und Absichern der Minus-Sensoren
     raw_minus = defaults.get("sensors_minus", [])
     if isinstance(raw_minus, list):
         current_minus = raw_minus
@@ -25,6 +27,7 @@ def get_data_schema(defaults=None):
     else:
         current_minus = list(raw_minus) if raw_minus else []
 
+    # Konvertierung der Min/Max-Werte in saubere Floats
     try:
         min_val = float(defaults.get("min_value", -99999.0))
     except (ValueError, TypeError):
@@ -46,7 +49,8 @@ def get_data_schema(defaults=None):
         vol.Optional("max_value", default=max_val): vol.Coerce(float),
     })
 
-class MathCombineFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
+# KORREKTUR: Der Klassenname MUSS mit dem Domänen-Namen beginnen (PascalCase)
+class ErweiterterKombinationssensorFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     """Erstellung des Helfers beim ersten Mal."""
     VERSION = 1
 
@@ -62,10 +66,11 @@ class MathCombineFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     @callback
     def async_get_options_flow(config_entry):
         """Schaltet das Optionen-Fenster in der UI frei."""
-        return MathCombineOptionsFlowHandler(config_entry)
+        return ErweiterterKombinationssensorOptionsFlowHandler(config_entry)
 
 
-class MathCombineOptionsFlowHandler(config_entries.OptionsFlow):
+# KORREKTUR: Auch hier den Namen für die Optionen sauber anpassen
+class ErweiterterKombinationssensorOptionsFlowHandler(config_entries.OptionsFlow):
     """Verarbeitung des Bearbeiten-Fensters über das offizielle Options-System."""
 
     def __init__(self, config_entry):
