@@ -31,8 +31,7 @@ Der standardmäßige Kombinations-Helfer von Home Assistant erlaubt leider nur d
 
 1. Gehen Sie auf **Einstellungen** ➔ **Geräte & Dienste** ➔ **Helfer**.
 2. Klicken Sie unten rechts auf **Helfer erstellen**.
-3. Scrollen Sie ganz nach unten und wählen Sie **Über eine Integration erstellen**.
-4. Suchen Sie nach **Erweiterter Kombinationssensor (+-)**.
+3. Suchen Sie nach **Erweiterter Kombinationssensor (+-)**.
 
 ---
 
@@ -58,9 +57,8 @@ The native Home Assistant combination helper only supports summing up values. Th
 
 1. Navigate to **Settings** ➔ **Devices & Services** ➔ **Helpers**.
 2. Click **Create Helper** in the bottom right.
-3. Scroll to the bottom and select **Create via integration**.
-4. Search for **Erweiterter Kombinationssensor (+-)**.
-
+3. Search for **Erweiterter Kombinationssensor (+-)**.
+<br>
 <img width="467" height="717" alt="grafik" src="https://github.com/user-attachments/assets/4ef8989f-5cc7-4cc5-ad83-99aadecc4525" /><br>
 <br>
 
